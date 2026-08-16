@@ -95,6 +95,33 @@ def validate_row(data):
 
     return "; ".join(flags) if flags else "passed all checks"
 
+def repair_mobile_desc(mobile_desc, part_desc, manufacturer, max_attempts=2):
+    """If mobile_desc fails the length rule, ask the AI to specifically fix it, up to max_attempts times."""
+    current = mobile_desc
+    for attempt in range(max_attempts):
+        length = len(current)
+        if 60 <= length <= 80:
+            return current  # already good, stop early
+
+        repair_prompt = f"""
+The following product description needs to be between 60 and 80 characters. It is currently {length} characters.
+Rewrite it to fit that range as a natural sentence — do not just pad with spaces or cut it off mid-word.
+
+Product info: "{part_desc}" (Manufacturer: {manufacturer})
+Current description: "{current}"
+
+Reply with ONLY the revised description text. No quotes, no explanation, nothing else.
+"""
+        try:
+            response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=[{"role": "user", "content": repair_prompt}]
+            )
+            current = response.choices[0].message.content.strip().strip('"')
+        except Exception:
+            break  # if the repair call itself fails, just stop and return what we have
+
+    return current
 
 def process_all():
     selected = load_products()
@@ -121,8 +148,9 @@ def process_all():
             failed_rows.append({"Mfg_Part_Num": part_num, "Part_Desc": part_desc, "error": error})
             continue
 
+        data["mobile_desc"] = repair_mobile_desc(data.get("mobile_desc", ""), part_desc, manufacturer)
         data["validation_flags"] = validate_row(data)
-        data["manufacturer_part_number"] = part_num  # always use the real value, never trust AI extraction for this
+        data["manufacturer_part_number"] = part_num # always use the real value, never trust AI extraction for this
         new_results.append(data)
         print(f"Processed: {part_desc}")
 
