@@ -11,4 +11,4 @@ def home():
     return render_template("index.html", products=products, columns=columns)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)
