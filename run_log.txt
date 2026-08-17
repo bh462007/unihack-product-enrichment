@@ -1,0 +1,353 @@
+2026-08-16 23:32:16,572 [INFO] Total matching rows: 29
+2026-08-16 23:32:16,573 [INFO] Already processed (will skip): 0
+2026-08-16 23:32:17,424 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:17,435 [INFO] Processed: KDFM404KPS Dishwasher SS
+2026-08-16 23:32:18,963 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:19,068 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:19,069 [INFO] Processed: PDSH4816AF Dishwasher SS - Display Only
+2026-08-16 23:32:20,599 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:20,608 [INFO] Processed: PDT715SYVFS Ge Dishwasher SS
+2026-08-16 23:32:22,240 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:22,243 [INFO] Processed: LDPH5554D LG Dishwasher BSS
+2026-08-16 23:32:23,875 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:24,083 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:24,085 [INFO] Processed: WDTS7024RZ Dishwasher SS - Display Only
+2026-08-16 23:32:25,719 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:25,721 [INFO] Processed: PDD415PYYFS GE Dishwasher SS
+2026-08-16 23:32:27,152 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:27,358 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:27,360 [INFO] Processed: KDTS424SBE Kitchen Aid Dishwasher Bk
+2026-08-16 23:32:28,894 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:28,995 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:28,997 [INFO] Processed: KDTS324SPS Kitchen Aid Dishwasher SS
+2026-08-16 23:32:30,620 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:30,839 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:30,842 [INFO] Processed: KDPS624SJP Dishwasher Juniper - Display Only
+2026-08-16 23:32:32,478 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:32,887 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:32,889 [INFO] Processed: KDTS624SBE Dishwasher BO Display Only
+2026-08-16 23:32:34,424 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:34,547 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:34,730 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:34,732 [INFO] Processed: TP-1935 Hole Drilling System
+2026-08-16 23:32:36,369 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:36,370 [INFO] Processed: 55227 Amana Countersink/Stop 1/8" Drill TB
+2026-08-16 23:32:38,109 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:38,111 [INFO] Processed: D25333K Dewalt Hammer Drill
+2026-08-16 23:32:39,748 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:39,751 [INFO] Processed: DCD803B Dewalt Multi-Head Drill Driver
+2026-08-16 23:32:41,387 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:41,500 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:41,501 [INFO] Processed: DCF860B Dewalt 20V Impact - Driver Drill
+2026-08-16 23:32:43,127 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:43,129 [INFO] Processed: 3401-20 Milw M12 Drill Driver - Brushless Compact (Bare)
+2026-08-16 23:32:44,663 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:44,666 [INFO] Processed: KPTDR050A Kreg 20V Ionic Compact Drill
+2026-08-16 23:32:46,404 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:46,407 [INFO] Processed: DCD1007B Dewalt 20V Cordless - 1/2" Hammer Drill (Bare)
+2026-08-16 23:32:48,042 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:48,044 [INFO] Processed: DCD799B Dewalt Drill
+2026-08-16 23:32:49,580 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:49,583 [INFO] Processed: 58006 Voyager Drill Press
+2026-08-16 23:32:51,319 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:51,322 [INFO] Processed: 49-66-4567 Milw 6" Magnetic - Impact Driver Set 6pc
+2026-08-16 23:32:52,353 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:32:52,354 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:32:55,211 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:55,216 [INFO] Processed: DCF809D1 Dewalt Atomic 20V 1/4" Impact Driver Kit
+2026-08-16 23:32:56,241 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:32:56,242 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:32:58,898 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:32:58,903 [INFO] Processed: 3450-20 Milw M12 Impact Driver - Brushless Compact (Bare)
+2026-08-16 23:33:00,024 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:00,026 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:02,555 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:02,558 [INFO] Processed: KPTDV025A Kreg 20V Ionic Compact Impact Driver
+2026-08-16 23:33:03,591 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:03,593 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:06,080 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:06,274 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:06,276 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:08,420 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:08,424 [INFO] Processed: 3048-20 Milw M12 1/4" Impact Wrench w/Friction Ring
+2026-08-16 23:33:09,460 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:09,462 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:12,006 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:12,008 [INFO] Processed: 3049-20 Milw M12 3/8" Impact Wrench w/Friction Ring
+2026-08-16 23:33:13,039 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:13,041 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:15,694 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:15,698 [INFO] Processed: 2563-20 Milw M12 Stubby 1/2" Impact Wrench
+2026-08-16 23:33:16,731 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:16,732 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:33:19,377 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:33:19,380 [INFO] Processed: 2563P-20 Milw M12 1/2" Stubby - Impact Wrench w/Pin Detent
+2026-08-16 23:33:20,505 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-16 23:33:20,506 [INFO] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-16 23:34:52,675 [INFO] Total matching rows: 29
+2026-08-16 23:34:52,676 [INFO] Already processed (will skip): 0
+2026-08-16 23:34:53,586 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:34:53,597 [INFO] Processed: KDFM404KPS Dishwasher SS
+2026-08-16 23:34:57,087 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:34:57,271 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:34:57,273 [INFO] Processed: PDSH4816AF Dishwasher SS - Display Only
+2026-08-16 23:35:00,961 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:00,964 [INFO] Processed: PDT715SYVFS Ge Dishwasher SS
+2026-08-16 23:35:04,568 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:04,570 [INFO] Processed: LDPH5554D LG Dishwasher BSS
+2026-08-16 23:35:08,022 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:08,128 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:08,242 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:08,244 [INFO] Processed: WDTS7024RZ Dishwasher SS - Display Only
+2026-08-16 23:35:11,784 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:11,789 [INFO] Processed: PDD415PYYFS GE Dishwasher SS
+2026-08-16 23:35:15,397 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:15,402 [INFO] Processed: KDTS424SBE Kitchen Aid Dishwasher Bk
+2026-08-16 23:35:19,028 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:19,235 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:19,238 [INFO] Processed: KDTS324SPS Kitchen Aid Dishwasher SS
+2026-08-16 23:35:22,666 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:22,668 [INFO] Processed: KDPS624SJP Dishwasher Juniper - Display Only
+2026-08-16 23:35:26,251 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:26,493 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:26,653 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:26,657 [INFO] Processed: KDTS624SBE Dishwasher BO Display Only
+2026-08-16 23:35:30,141 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:30,256 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:30,367 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:30,370 [INFO] Processed: TP-1935 Hole Drilling System
+2026-08-16 23:35:33,946 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:34,092 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:34,094 [INFO] Processed: 55227 Amana Countersink/Stop 1/8" Drill TB
+2026-08-16 23:35:37,720 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:37,723 [INFO] Processed: D25333K Dewalt Hammer Drill
+2026-08-16 23:35:41,406 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:41,408 [INFO] Processed: DCD803B Dewalt Multi-Head Drill Driver
+2026-08-16 23:35:45,093 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:45,096 [INFO] Processed: DCF860B Dewalt 20V Impact - Driver Drill
+2026-08-16 23:35:48,574 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:48,576 [INFO] Processed: 3401-20 Milw M12 Drill Driver - Brushless Compact (Bare)
+2026-08-16 23:35:53,183 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:53,288 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:53,290 [INFO] Processed: KPTDR050A Kreg 20V Ionic Compact Drill
+2026-08-16 23:35:57,014 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:35:57,022 [INFO] Processed: DCD1007B Dewalt 20V Cordless - 1/2" Hammer Drill (Bare)
+2026-08-16 23:36:00,961 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:01,069 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:01,073 [INFO] Processed: DCD799B Dewalt Drill
+2026-08-16 23:36:04,550 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:04,554 [INFO] Processed: 58006 Voyager Drill Press
+2026-08-16 23:36:08,219 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:08,223 [INFO] Processed: 49-66-4567 Milw 6" Magnetic - Impact Driver Set 6pc
+2026-08-16 23:36:13,826 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:13,970 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:13,972 [INFO] Processed: DCF809D1 Dewalt Atomic 20V 1/4" Impact Driver Kit
+2026-08-16 23:36:17,569 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:17,571 [INFO] Processed: 3450-20 Milw M12 Impact Driver - Brushless Compact (Bare)
+2026-08-16 23:36:21,143 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:21,145 [INFO] Processed: KPTDV025A Kreg 20V Ionic Compact Impact Driver
+2026-08-16 23:36:24,827 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:24,831 [INFO] Processed: 3048-20 Milw M12 1/4" Impact Wrench w/Friction Ring
+2026-08-16 23:36:28,408 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:28,417 [INFO] Processed: 3049-20 Milw M12 3/8" Impact Wrench w/Friction Ring
+2026-08-16 23:36:32,095 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:32,097 [INFO] Processed: 2563-20 Milw M12 Stubby 1/2" Impact Wrench
+2026-08-16 23:36:35,781 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:35,784 [INFO] Processed: 2563P-20 Milw M12 1/2" Stubby - Impact Wrench w/Pin Detent
+2026-08-16 23:36:39,569 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:36:39,571 [INFO] Processed: DCK225D2 Dewalt Impact/Drill - Kit
+2026-08-16 23:36:42,592 [INFO] ========================================
+2026-08-16 23:36:42,593 [INFO] RUN SUMMARY
+2026-08-16 23:36:42,593 [INFO]   total_matching_rows: 29
+2026-08-16 23:36:42,594 [INFO]   already_processed_skipped: 0
+2026-08-16 23:36:42,594 [INFO]   newly_processed: 29
+2026-08-16 23:36:42,595 [INFO]   skipped_bad_input: 0
+2026-08-16 23:36:42,595 [INFO]   api_failures: 0
+2026-08-16 23:36:42,596 [INFO]   passed_validation: 28
+2026-08-16 23:36:42,596 [INFO]   failed_validation: 1
+2026-08-16 23:36:42,597 [INFO]   pass_rate_percent: 96.6
+2026-08-16 23:36:42,597 [INFO] ========================================
+2026-08-16 23:46:28,588 [INFO] No duplicate part numbers found in source data.
+2026-08-16 23:46:28,589 [INFO] Total matching rows: 29
+2026-08-16 23:46:28,589 [INFO] Already processed (will skip): 0
+2026-08-16 23:46:29,294 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:29,320 [INFO] Processed: KDFM404KPS Dishwasher SS (confidence: 85)
+2026-08-16 23:46:31,828 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:31,961 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:31,964 [INFO] Processed: PDSH4816AF Dishwasher SS - Display Only (confidence: 100)
+2026-08-16 23:46:34,518 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:34,722 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:35,030 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:35,031 [INFO] Processed: PDT715SYVFS Ge Dishwasher SS (confidence: 85)
+2026-08-16 23:46:37,692 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:38,498 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:38,500 [INFO] Processed: LDPH5554D LG Dishwasher BSS (confidence: 85)
+2026-08-16 23:46:40,990 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:41,173 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:41,176 [INFO] Processed: WDTS7024RZ Dishwasher SS - Display Only (confidence: 100)
+2026-08-16 23:46:43,732 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:43,735 [INFO] Processed: PDD415PYYFS GE Dishwasher SS (confidence: 70)
+2026-08-16 23:46:46,190 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:46,193 [INFO] Processed: KDTS424SBE Kitchen Aid Dishwasher Bk (confidence: 100)
+2026-08-16 23:46:48,647 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:48,771 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:48,774 [INFO] Processed: KDTS324SPS Kitchen Aid Dishwasher SS (confidence: 100)
+2026-08-16 23:46:51,310 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:51,516 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:51,519 [INFO] Processed: KDPS624SJP Dishwasher Juniper - Display Only (confidence: 100)
+2026-08-16 23:46:54,177 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:54,435 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:54,438 [INFO] Processed: KDTS624SBE Dishwasher BO Display Only (confidence: 85)
+2026-08-16 23:46:57,046 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:57,049 [INFO] Processed: TP-1935 Hole Drilling System (confidence: 85)
+2026-08-16 23:46:59,606 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:46:59,610 [INFO] Processed: 55227 Amana Countersink/Stop 1/8" Drill TB (confidence: 85)
+2026-08-16 23:47:02,193 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:02,195 [INFO] Processed: D25333K Dewalt Hammer Drill (confidence: 85)
+2026-08-16 23:47:04,885 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:04,887 [INFO] Processed: DCD803B Dewalt Multi-Head Drill Driver (confidence: 85)
+2026-08-16 23:47:07,428 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:07,695 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:07,697 [INFO] Processed: DCF860B Dewalt 20V Impact - Driver Drill (confidence: 85)
+2026-08-16 23:47:10,447 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:10,450 [WARNING] Bad JSON on attempt 1: Invalid control character at: line 6 column 74 (char 251)
+2026-08-16 23:47:12,098 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:12,303 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:12,507 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:12,510 [INFO] Processed: 3401-20 Milw M12 Drill Driver - Brushless Compact (Bare) (confidence: 85)
+2026-08-16 23:47:15,169 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:15,172 [INFO] Processed: KPTDR050A Kreg 20V Ionic Compact Drill (confidence: 85)
+2026-08-16 23:47:17,834 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:17,836 [INFO] Processed: DCD1007B Dewalt 20V Cordless - 1/2" Hammer Drill (Bare) (confidence: 85)
+2026-08-16 23:47:20,494 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:20,497 [INFO] Processed: DCD799B Dewalt Drill (confidence: 85)
+2026-08-16 23:47:22,952 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:22,954 [INFO] Processed: 58006 Voyager Drill Press (confidence: 85)
+2026-08-16 23:47:25,412 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:25,654 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:25,656 [INFO] Processed: 49-66-4567 Milw 6" Magnetic - Impact Driver Set 6pc (confidence: 85)
+2026-08-16 23:47:28,174 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:28,384 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:28,598 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:28,600 [INFO] Processed: DCF809D1 Dewalt Atomic 20V 1/4" Impact Driver Kit (confidence: 75)
+2026-08-16 23:47:31,146 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:31,148 [INFO] Processed: 3450-20 Milw M12 Impact Driver - Brushless Compact (Bare) (confidence: 85)
+2026-08-16 23:47:33,705 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:33,707 [INFO] Processed: KPTDV025A Kreg 20V Ionic Compact Impact Driver (confidence: 85)
+2026-08-16 23:47:36,367 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:36,369 [INFO] Processed: 3048-20 Milw M12 1/4" Impact Wrench w/Friction Ring (confidence: 85)
+2026-08-16 23:47:38,926 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:38,928 [INFO] Processed: 3049-20 Milw M12 3/8" Impact Wrench w/Friction Ring (confidence: 85)
+2026-08-16 23:47:41,691 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:41,922 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:42,203 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:42,206 [INFO] Processed: 2563-20 Milw M12 Stubby 1/2" Impact Wrench (confidence: 75)
+2026-08-16 23:47:44,662 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:44,665 [INFO] Processed: 2563P-20 Milw M12 1/2" Stubby - Impact Wrench w/Pin Detent (confidence: 85)
+2026-08-16 23:47:47,324 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:47,438 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:47,631 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-16 23:47:47,633 [INFO] Processed: DCK225D2 Dewalt Impact/Drill - Kit (confidence: 85)
+2026-08-16 23:47:49,648 [INFO] 2 of 29 total rows flagged for human review
+2026-08-16 23:47:49,649 [INFO] ========================================
+2026-08-16 23:47:49,650 [INFO] RUN SUMMARY
+2026-08-16 23:47:49,650 [INFO]   total_matching_rows: 29
+2026-08-16 23:47:49,650 [INFO]   already_processed_skipped: 0
+2026-08-16 23:47:49,650 [INFO]   newly_processed: 29
+2026-08-16 23:47:49,651 [INFO]   skipped_bad_input: 0
+2026-08-16 23:47:49,651 [INFO]   api_failures: 0
+2026-08-16 23:47:49,651 [INFO]   passed_validation: 27
+2026-08-16 23:47:49,651 [INFO]   failed_validation: 2
+2026-08-16 23:47:49,651 [INFO]   pass_rate_percent: 93.1
+2026-08-16 23:47:49,651 [INFO] ========================================
+2026-08-17 00:01:58,410 [INFO] No duplicate part numbers found in source data.
+2026-08-17 00:01:58,411 [INFO] Total matching rows: 29
+2026-08-17 00:01:58,411 [INFO] Already processed (will skip): 0
+2026-08-17 00:01:58,941 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:01:59,051 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:01:59,160 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:01:59,161 [INFO] Processed: KDFM404KPS Dishwasher SS (confidence: 75)
+2026-08-17 00:02:01,556 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:01,658 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:01,857 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:01,860 [INFO] Processed: PDSH4816AF Dishwasher SS - Display Only (confidence: 100)
+2026-08-17 00:02:04,198 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:04,201 [INFO] Processed: PDT715SYVFS Ge Dishwasher SS (confidence: 100)
+2026-08-17 00:02:06,717 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:06,718 [INFO] Processed: LDPH5554D LG Dishwasher BSS (confidence: 85)
+2026-08-17 00:02:09,127 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:09,336 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:09,338 [INFO] Processed: WDTS7024RZ Dishwasher SS - Display Only (confidence: 100)
+2026-08-17 00:02:11,791 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:11,794 [INFO] Processed: PDD415PYYFS GE Dishwasher SS (confidence: 100)
+2026-08-17 00:02:14,248 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:14,251 [INFO] Processed: KDTS424SBE Kitchen Aid Dishwasher Bk (confidence: 100)
+2026-08-17 00:02:16,829 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:17,040 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:17,043 [INFO] Processed: KDTS324SPS Kitchen Aid Dishwasher SS (confidence: 100)
+2026-08-17 00:02:19,528 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:19,648 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:19,650 [INFO] Processed: KDPS624SJP Dishwasher Juniper - Display Only (confidence: 100)
+2026-08-17 00:02:22,235 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:22,238 [INFO] Processed: KDTS624SBE Dishwasher BO Display Only (confidence: 85)
+2026-08-17 00:02:24,965 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:24,967 [INFO] Processed: TP-1935 Hole Drilling System (confidence: 85)
+2026-08-17 00:02:27,562 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:27,702 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:27,704 [INFO] Processed: 55227 Amana Countersink/Stop 1/8" Drill TB (confidence: 85)
+2026-08-17 00:02:30,355 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:30,357 [INFO] Processed: D25333K Dewalt Hammer Drill (confidence: 85)
+2026-08-17 00:02:32,988 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:32,991 [INFO] Processed: DCD803B Dewalt Multi-Head Drill Driver (confidence: 85)
+2026-08-17 00:02:35,547 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:35,651 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:35,654 [INFO] Processed: DCF860B Dewalt 20V Impact - Driver Drill (confidence: 85)
+2026-08-17 00:02:38,082 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:38,085 [INFO] Processed: 3401-20 Milw M12 Drill Driver - Brushless Compact (Bare) (confidence: 85)
+2026-08-17 00:02:40,590 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:40,592 [INFO] Processed: KPTDR050A Kreg 20V Ionic Compact Drill (confidence: 85)
+2026-08-17 00:02:43,227 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:43,229 [INFO] Processed: DCD1007B Dewalt 20V Cordless - 1/2" Hammer Drill (Bare) (confidence: 85)
+2026-08-17 00:02:45,889 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:46,080 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:46,301 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:46,303 [INFO] Processed: DCD799B Dewalt Drill (confidence: 75)
+2026-08-17 00:02:48,756 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:48,921 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:49,064 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:49,067 [INFO] Processed: 58006 Voyager Drill Press (confidence: 85)
+2026-08-17 00:02:51,829 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:51,831 [INFO] Processed: 49-66-4567 Milw 6" Magnetic - Impact Driver Set 6pc (confidence: 85)
+2026-08-17 00:02:54,392 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:54,394 [INFO] Processed: DCF809D1 Dewalt Atomic 20V 1/4" Impact Driver Kit (confidence: 85)
+2026-08-17 00:02:57,154 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:57,461 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:57,673 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:02:57,674 [INFO] Processed: 3450-20 Milw M12 Impact Driver - Brushless Compact (Bare) (confidence: 75)
+2026-08-17 00:03:00,320 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:00,322 [INFO] Processed: KPTDV025A Kreg 20V Ionic Compact Impact Driver (confidence: 85)
+2026-08-17 00:03:02,915 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:02,917 [INFO] Processed: 3048-20 Milw M12 1/4" Impact Wrench w/Friction Ring (confidence: 85)
+2026-08-17 00:03:05,422 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:05,659 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:05,901 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:05,903 [INFO] Processed: 3049-20 Milw M12 3/8" Impact Wrench w/Friction Ring (confidence: 75)
+2026-08-17 00:03:08,393 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:08,535 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:08,537 [INFO] Processed: 2563-20 Milw M12 Stubby 1/2" Impact Wrench (confidence: 85)
+2026-08-17 00:03:11,182 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:11,183 [INFO] Processed: 2563P-20 Milw M12 1/2" Stubby - Impact Wrench w/Pin Detent (confidence: 85)
+2026-08-17 00:03:13,844 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:03:13,845 [INFO] Processed: DCK225D2 Dewalt Impact/Drill - Kit (confidence: 85)
+2026-08-17 00:03:15,865 [INFO] 4 of 29 total rows flagged for human review
+2026-08-17 00:03:15,867 [INFO] ========================================
+2026-08-17 00:03:15,867 [INFO] RUN SUMMARY
+2026-08-17 00:03:15,867 [INFO]   total_matching_rows: 29
+2026-08-17 00:03:15,867 [INFO]   already_processed_skipped: 0
+2026-08-17 00:03:15,867 [INFO]   newly_processed: 29
+2026-08-17 00:03:15,868 [INFO]   skipped_bad_input: 0
+2026-08-17 00:03:15,868 [INFO]   api_failures: 0
+2026-08-17 00:03:15,868 [INFO]   passed_validation: 25
+2026-08-17 00:03:15,868 [INFO]   failed_validation: 4
+2026-08-17 00:03:15,868 [INFO]   pass_rate_percent: 86.2
+2026-08-17 00:03:15,868 [INFO] ========================================

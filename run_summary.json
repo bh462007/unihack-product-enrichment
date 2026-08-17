@@ -1,0 +1,10 @@
+{
+  "total_matching_rows": 29,
+  "already_processed_skipped": 0,
+  "newly_processed": 29,
+  "skipped_bad_input": 0,
+  "api_failures": 0,
+  "passed_validation": 25,
+  "failed_validation": 4,
+  "pass_rate_percent": 86.2
+}
