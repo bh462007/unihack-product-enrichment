@@ -1,53 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Product Enrichment - UniHack</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 30px;
-        }
-        h1 {
-            color: #222;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            background: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background-color: #2c3e50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unilog — Parts Catalog Enrichment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% from '_macros.html' import product_entry, review_entry %}
 </head>
 <body>
-    <h1>Enriched Product Data</h1>
-    <p>{{ products|length }} products processed</p>
-    <table>
-        <tr>
-            {% for column in columns %}
-            <th>{{ column }}</th>
-            {% endfor %}
-        </tr>
-        {% for product in products %}
-        <tr>
-            {% for column in columns %}
-            <td>{{ product[column] }}</td>
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div id="toastHost" class="toast-host" aria-live="polite" aria-atomic="true"></div>
+
+<header class="blueprint-header">
+  <div class="header-grid" aria-hidden="true"></div>
+  <div class="header-inner">
+    <div class="header-title-block">
+      <p class="doc-id mono">DWG NO. UNI-CAT-001 · REV A</p>
+      <h1 class="wordmark">Unilog Parts Catalog</h1>
+      <p class="doc-sub mono">Industrial Distributor · Enriched Commerce Records · <span class="count-up" data-value="{{ stats.total }}" data-decimals="0">0</span> entries</p>
+    </div>
+    <div class="header-meta">
+      <dl class="meta-grid">
+        <div><dt>Total</dt><dd class="mono count-up" data-value="{{ stats.total }}" data-decimals="0">0</dd></div>
+        <div><dt>Pass Rate</dt><dd class="mono count-up" data-value="{{ stats.pass_rate }}" data-decimals="1" data-suffix="%">0</dd></div>
+        <div><dt>Avg Conf.</dt><dd class="mono count-up" data-value="{{ stats.avg_confidence }}" data-decimals="1">0</dd></div>
+        <div><dt>Review</dt><dd class="mono count-up" data-value="{{ stats.needs_review_count }}" data-decimals="0">0</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="ticker-strip" aria-live="polite" aria-label="Live enrichment example">
+    <span class="ticker-label mono">INPUT »</span>
+    <span id="tickerRaw" class="ticker-raw mono"></span>
+    <span id="tickerArrow" class="ticker-arrow mono" aria-hidden="true">→</span>
+    <span id="tickerResult" class="ticker-result mono"></span>
+  </div>
+</header>
+
+<nav class="tab-nav" aria-label="Catalog sections">
+  <div class="tab-nav-inner" role="tablist">
+    <span class="tab-indicator" aria-hidden="true"></span>
+    <button class="tab-link active" role="tab" id="tab-index" aria-selected="true" aria-controls="index" data-tab="index">Overview</button>
+    <button class="tab-link" role="tab" id="tab-catalog" aria-selected="false" aria-controls="catalog" data-tab="catalog">Full Catalog</button>
+    <button class="tab-link" role="tab" id="tab-review" aria-selected="false" aria-controls="review" data-tab="review">
+      Review Queue <span class="tab-count mono">[{{ stats.needs_review_count }}]</span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content" class="main-col">
+
+  <section id="index" class="tab-panel active" role="tabpanel" aria-labelledby="tab-index" tabindex="0">
+    <div class="overview-hero sheet-block">
+      <div class="hero-stat-primary">
+        <span class="hero-stat-label">Total Enriched Entries</span>
+        <span class="hero-stat-value mono count-up" data-value="{{ stats.total }}" data-decimals="0">0</span>
+      </div>
+      <dl class="hero-stat-secondary">
+        <div>
+          <dt>Pass Rate</dt>
+          <dd class="mono count-up" data-value="{{ stats.pass_rate }}" data-decimals="1" data-suffix="%">0</dd>
+        </div>
+        <div>
+          <dt>Avg Confidence</dt>
+          <dd class="mono count-up" data-value="{{ stats.avg_confidence }}" data-decimals="1">0</dd>
+        </div>
+        <div>
+          <dt>Departments</dt>
+          <dd class="mono count-up" data-value="{{ stats.categories_count }}" data-decimals="0">0</dd>
+        </div>
+        <div>
+          <dt>Needs Review</dt>
+          <dd class="mono count-up" data-value="{{ stats.needs_review_count }}" data-decimals="0">0</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="sheet-block">
+      <h2 class="block-title">Catalog Summary</h2>
+      <p class="foreword">
+        This specification sheet documents <strong><span class="count-up" data-value="{{ stats.total }}" data-decimals="0">0</span></strong> enriched catalog entries across
+        <strong><span class="count-up" data-value="{{ stats.categories_count }}" data-decimals="0">0</span></strong> top-level departments. Abbreviated distributor line items
+        (e.g. invoice codes, truncated descriptions) are expanded into structured commerce fields — title,
+        description, category path, material, and validation metadata. On first pass,
+        <strong><span class="count-up" data-value="{{ stats.pass_rate }}" data-decimals="1" data-suffix="%">0</span></strong> satisfied Unilog content-formatting rules; remaining entries
+        are routed to the review queue rather than published silently.
+      </p>
+    </div>
+
+    <div class="sheet-block">
+      <h2 class="block-title">Entries by Department</h2>
+      {% if stats.category_counts %}
+      <table class="dept-table" summary="Product count by department">
+        <thead>
+          <tr>
+            <th scope="col">Department</th>
+            <th scope="col">Share</th>
+            <th scope="col" class="num">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for cat in stats.category_counts %}
+          <tr class="enter-row" style="--enter-i: {{ loop.index0 }};">
+            <td>{{ cat.name }}</td>
+            <td>
+              <div class="bar-track" aria-hidden="true">
+                <div class="bar-fill bar-animate" data-width="{{ cat.pct }}"></div>
+              </div>
+              <span class="sr-only">{{ cat.pct }} percent</span>
+            </td>
+            <td class="num mono">{{ cat.count }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p class="empty-inline">No department data available.</p>
+      {% endif %}
+    </div>
+
+    <div class="sheet-block">
+      <h2 class="block-title">Validation Outcome</h2>
+      <div class="outcome-bar" role="img" aria-label="{{ stats.pass_count }} passed, {{ stats.total - stats.pass_count }} flagged out of {{ stats.total }} total">
+        <div class="seg-pass bar-animate bar-animate-h" data-width="{{ stats.pass_rate }}"></div>
+        <div class="seg-flag bar-animate bar-animate-h" data-width="{{ 100 - stats.pass_rate }}"></div>
+      </div>
+      <div class="outcome-legend">
+        <span><span class="legend-swatch swatch-pass" aria-hidden="true"></span> Passed — {{ stats.pass_count }}</span>
+        <span><span class="legend-swatch swatch-flag" aria-hidden="true"></span> Flagged — {{ stats.total - stats.pass_count }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="tab-panel" role="tabpanel" aria-labelledby="tab-catalog" tabindex="0" hidden>
+    <div class="filter-bar" role="search" aria-label="Filter catalog entries">
+      <div class="filter-field">
+        <label for="searchInput">Search</label>
+        <input type="search" id="searchInput" placeholder="part number, title, description…" autocomplete="off" aria-describedby="filterStatus">
+      </div>
+      <div class="filter-field">
+        <label for="categoryFilter">Department</label>
+        <select id="categoryFilter" aria-label="Filter by department">
+          <option value="">All departments</option>
+          {% for cat in categories %}
+          <option value="{{ cat }}">{{ cat }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="confidenceFilter">Confidence</label>
+        <select id="confidenceFilter" aria-label="Filter by confidence level">
+          <option value="">All levels</option>
+          <option value="high">High (85+)</option>
+          <option value="mid">Medium (70–84)</option>
+          <option value="low">Low (&lt;70)</option>
+        </select>
+      </div>
+      <a class="export-btn pressable" href="/export" id="exportBtn" aria-label="Download enriched catalog as CSV file">Export CSV</a>
+    </div>
+
+    <p id="filterStatus" class="filter-status mono" aria-live="polite"></p>
+
+    <div id="catalogSkeleton" class="skeleton-list" aria-hidden="true" hidden>
+      {% for i in range(6) %}
+      <div class="skeleton-row">
+        <span class="skel skel-num"></span>
+        <span class="skel skel-part"></span>
+        <span class="skel skel-title"></span>
+        <span class="skel skel-stamp"></span>
+        <span class="skel skel-stamp"></span>
+        <span class="skel skel-conf"></span>
+      </div>
+      <div class="skel-rule" aria-hidden="true"></div>
+      {% endfor %}
+    </div>
+
+    <div id="catalogList" class="entry-list list-loading" data-total="{{ products|length }}">
+      {% for p in products %}
+      {{ product_entry(p, loop.index, true) }}
+      {% endfor %}
+    </div>
+
+    <div id="catalogEmpty" class="empty-state" hidden>
+      <p class="empty-title">No entries match current filters</p>
+      <p class="empty-desc">Try clearing the search box or widening the department / confidence filters.</p>
+    </div>
+
+    <nav id="pagination" class="pagination" aria-label="Catalog pages" hidden>
+      <button type="button" id="pagePrev" class="page-btn pressable" aria-label="Previous page">← Prev</button>
+      <span id="pageInfo" class="page-info mono"></span>
+      <button type="button" id="pageNext" class="page-btn pressable" aria-label="Next page">Next →</button>
+    </nav>
+  </section>
+
+  <section id="review" class="tab-panel" role="tabpanel" aria-labelledby="tab-review" tabindex="0" hidden>
+    {% if needs_review_products|length == 0 %}
+    <div class="empty-state">
+      <p class="empty-title">Review queue is empty</p>
+      <p class="empty-desc">No entries are currently flagged for manual review. All processed records passed validation or have already been cleared.</p>
+    </div>
+    {% else %}
+    <p class="review-intro">The following {{ needs_review_products|length }} entries failed one or more validation checks and require human review before publication.</p>
+    <div class="entry-list review-list">
+      {% for p in needs_review_products %}
+      {{ review_entry(p, loop.index) }}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+
+</main>
+
+<footer class="site-footer mono">
+  Unilog Parts Catalog Enrichment · Source: enriched_output.csv · needs_review.csv
+</footer>
+
+<script id="heroData" type="application/json">{{ hero_examples | tojson }}</script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

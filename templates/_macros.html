@@ -1,0 +1,148 @@
+{# Reusable UI fragments for catalog entries, badges, and stamps #}
+
+{% macro confidence_badge(score) -%}
+{% set s = score|default(0, true)|float %}
+<span class="conf-badge {% if s >= 85 %}conf-high{% elif s >= 70 %}conf-mid{% else %}conf-low{% endif %}"
+      aria-label="Confidence score {{ s|int }}{% if s >= 85 %}, high{% elif s >= 70 %}, medium{% else %}, low{% endif %}">
+  <span class="conf-score mono">{{ s|int }}</span>
+  <span class="conf-label">{% if s >= 85 %}High{% elif s >= 70 %}Med{% else %}Low{% endif %}</span>
+</span>
+{%- endmacro %}
+
+{% macro validation_stamp(flags) -%}
+{% if flags == 'passed all checks' %}
+<span class="tech-stamp stamp-pass" aria-label="Validation: passed all checks">PASS</span>
+{% else %}
+<span class="tech-stamp stamp-flag" aria-label="Validation: flagged — {{ flags }}">FLAG</span>
+{% endif %}
+{%- endmacro %}
+
+{% macro entity_stamp(status) -%}
+{% if status and 'RESOLVED' in status|string %}
+<span class="tech-stamp stamp-pass" aria-label="Entity resolution: resolved">RESOLVED</span>
+{% else %}
+<span class="tech-stamp stamp-ambig" aria-label="Entity resolution: ambiguous">AMBIGUOUS</span>
+{% endif %}
+{%- endmacro %}
+
+{% macro spec_detail(p) -%}
+<div class="spec-sheet">
+  <div class="spec-col">
+    <h4 class="spec-heading">Raw Distributor Input</h4>
+    <div class="spec-row">
+      <span class="k">Part Desc</span><span class="leader" aria-hidden="true"></span>
+      <span class="v mono">{{ p['Part_Desc']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Manufacturer</span><span class="leader" aria-hidden="true"></span>
+      <span class="v mono">{{ p['Part_Manuf']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Part Number</span><span class="leader" aria-hidden="true"></span>
+      <span class="v mono">{{ p['manufacturer_part_number']|default('—', true) }}</span>
+    </div>
+  </div>
+  <div class="spec-col">
+    <h4 class="spec-heading">Enriched Output</h4>
+    <div class="spec-row">
+      <span class="k">Short Title</span><span class="leader" aria-hidden="true"></span>
+      <span class="v">{{ p['short_title']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Invoice Desc</span><span class="leader" aria-hidden="true"></span>
+      <span class="v mono">{{ p['invoice_desc']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Mobile Desc</span><span class="leader" aria-hidden="true"></span>
+      <span class="v mono">{{ p['mobile_desc']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Category</span><span class="leader" aria-hidden="true"></span>
+      <span class="v">{{ p['classpath']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Material</span><span class="leader" aria-hidden="true"></span>
+      <span class="v">{{ p['material_or_color']|default('—', true) }}</span>
+    </div>
+    <div class="spec-row">
+      <span class="k">Long Desc</span><span class="leader" aria-hidden="true"></span>
+      <span class="v">{{ p['long_description']|default('—', true) }}</span>
+    </div>
+  </div>
+  <div class="notes-box">
+    <h4 class="spec-heading">Reasoning Trace</h4>
+    <p class="notes-text">{{ p['confidence_notes']|default('No reasoning notes recorded for this entry.', true) }}</p>
+    {% if p['validation_flags'] and p['validation_flags'] != 'passed all checks' %}
+    <p class="notes-flag mono">Validation: {{ p['validation_flags'] }}</p>
+    {% endif %}
+    {% if p['entity_resolution_status'] %}
+    <p class="notes-flag mono">Entity: {{ p['entity_resolution_status'] }}</p>
+    {% endif %}
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro product_entry(p, index, expandable=true) -%}
+{% set cp = p['classpath']|default('', true)|string %}
+{% set dept = cp.split('>')[0].strip() if cp and cp != 'nan' else '' %}
+{% set search_blob = (p['manufacturer_part_number']|string ~ ' ' ~ p['short_title']|string ~ ' ' ~ p['long_description']|string ~ ' ' ~ p['invoice_desc']|string)|lower %}
+<div class="catalog-record"
+     data-index="{{ index }}"
+     data-category="{{ dept }}"
+     data-confidence="{{ p['confidence_score']|default(0, true) }}"
+     data-search="{{ search_blob }}">
+  <div class="entry{% if not expandable %} entry-static{% endif %}"
+       {% if expandable %}
+       role="button"
+       tabindex="0"
+       aria-expanded="false"
+       aria-controls="detail-{{ index }}"
+       aria-label="Part {{ p['manufacturer_part_number']|default('unknown', true) }}, {{ p['short_title']|default('untitled', true) }}. Press Enter to expand details."
+       {% endif %}>
+    <div class="entry-head">
+      <span class="entry-num mono">{{ "%03d"|format(index) }}</span>
+      <span class="entry-part mono">{{ p['manufacturer_part_number']|default('—', true) }}</span>
+      <span class="entry-title">{{ p['short_title']|default('—', true) }}</span>
+      {{ validation_stamp(p['validation_flags']) }}
+      {{ entity_stamp(p['entity_resolution_status']) }}
+      {{ confidence_badge(p['confidence_score']|default(0, true)) }}
+      {% if expandable %}<span class="entry-chevron mono" aria-hidden="true">+</span>{% endif %}
+    </div>
+  </div>
+  {% if expandable %}
+  <div class="entry-detail" id="detail-{{ index }}" role="region" aria-label="Detail for part {{ p['manufacturer_part_number']|default('unknown', true) }}">
+    {{ spec_detail(p) }}
+  </div>
+  {% endif %}
+  <div class="rule-line" aria-hidden="true"></div>
+</div>
+{%- endmacro %}
+
+{% macro review_entry(p, index) -%}
+{% set cp = p['classpath']|default('', true)|string %}
+{% set dept = cp.split('>')[0].strip() if cp and cp != 'nan' else '' %}
+<div class="catalog-record review-record"
+     data-index="{{ index }}"
+     data-category="{{ dept }}"
+     data-confidence="{{ p['confidence_score']|default(0, true) }}">
+  <div class="entry"
+       role="button"
+       tabindex="0"
+       aria-expanded="false"
+       aria-controls="review-detail-{{ index }}"
+       aria-label="Review item {{ p['manufacturer_part_number']|default('unknown', true) }}. Press Enter to expand.">
+    <div class="entry-head">
+      <span class="entry-num mono">{{ "%03d"|format(index) }}</span>
+      <span class="entry-part mono">{{ p['manufacturer_part_number']|default('—', true) }}</span>
+      <span class="entry-title">{{ p['short_title']|default('—', true) }}</span>
+      <span class="tech-stamp stamp-flag" aria-label="Validation flag: {{ p['validation_flags']|default('flagged', true) }}">{{ (p['validation_flags']|default('FLAGGED', true))[:20] }}</span>
+      {{ confidence_badge(p['confidence_score']|default(0, true)) }}
+      <span class="entry-chevron mono" aria-hidden="true">+</span>
+    </div>
+  </div>
+  <div class="entry-detail" id="review-detail-{{ index }}" role="region" aria-label="Review detail for part {{ p['manufacturer_part_number']|default('unknown', true) }}">
+    {{ spec_detail(p) }}
+  </div>
+  <div class="rule-line" aria-hidden="true"></div>
+</div>
+{%- endmacro %}
