@@ -14,7 +14,7 @@ def merge_with_raw(df):
     return df.merge(get_raw(), on="manufacturer_part_number", how="left")
 
 
-@app.route("/")
+
 @app.route("/")
 def home():
     df = pd.read_csv("enriched_output.csv")
@@ -75,6 +75,6 @@ def home():
 def export():
     return send_file("enriched_output.csv", as_attachment=True, download_name="enriched_products.csv")
 
-
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
